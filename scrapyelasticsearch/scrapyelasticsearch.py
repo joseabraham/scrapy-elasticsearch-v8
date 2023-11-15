@@ -127,7 +127,7 @@ class ElasticSearchPipeline(object):
 
         index_action = {
             '_index': index_name,
-            '_type': self.settings['ELASTICSEARCH_TYPE'],
+            # '_type': self.settings['ELASTICSEARCH_TYPE'],
             '_source': dict(item)
         }
 
